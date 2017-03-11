@@ -1,0 +1,84 @@
+.menu{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #ddd;
+
+}
+.menuVertical{text-decoration: none;background-color: #4e4c4c;color: #007f80; display: block; position: relative;}
+
+
+ul.menuVertical {text-decoration: none;background-color: #ddd;padding: 10px;}
+
+
+ul.menuVertical li{text-decoration: none;background-color: #02af70;
+  color: #005a5a;padding: 10px;font-size: 1.2em;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  list-style: none;
+}
+
+ul.menuVertical li :hover{
+text-decoration: none;
+background-color: #A9A9A9;
+color: #004848;
+padding: 10px;
+display: block;
+}
+
+
+ul.menuVertical li a{text-decoration: none;background-color: #02af70;color: #00751f;}
+
+ul.menuVertical li a:hover {background-color: #b4ff00; text-decoration: none;}
+ul.menuinline {
+    width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+}
+ul.menuinline li {
+    float: left;
+    padding-right: 30px;
+      border: 3px solid #ddd;
+
+  }
+ul.menuinline li a{
+        color: white;
+        text-decoration:none;
+        background-color: #4e4c4c;
+        padding: 10px;
+          border: 3px solid #008024;
+
+}
+#Logo{
+  font-size: 1.5em;
+  text-decoration: none;
+  padding: 10px; margin: 10px;
+  color: white;
+}
+
+h1#Logo a{
+  font-size: 1.5em;
+  text-decoration: none;
+  padding: 10px; margin: 10px; background-color: black;
+  border: 1px solid white; color: white;
+}
+table, td, th {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 15px;
+}
+.marqueestyle,h1{
+  font-size: 1.7em;
+  text-decoration: none;
+  background-color: #02af70;
+  border: 1px solid #008024;
+  color: green;
+
+    padding: 40px;
+}

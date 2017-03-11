@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      function validation() {
+
+        var element= document.getElementById("text1");
+        var str=element.value;
+        var RegularExpr=/^[0-9A-Za-z]+$/;
+        if(str.match(RegularExpr)){
+          return true;
+        }else {
+          alert("Please enter the alphanumeric value");
+          ele.focus();
+          return false;
+        }
+      }
+
+      function Agevalidation(Element,Min,Max){
+        var n= Element.value.valueOf();
+        if(n>=Min && n<=Max){return true;}else {
+          Element.focus();
+          alert("Please enter age between 18 & 35");
+        }
+      }
+
+function Emailvalidation(){
+  //  alert("Email Function");
+
+    var element = document.getElementById("Email");
+    var Email1=element.value;
+    var ch=Email1.charAt(0);
+  //  alert(ch);
+
+    var atpos = Email1.indexOf("@");
+//    alert("atpos:"+atpos);
+     var dotpos = Email1.lastIndexOf(".");
+//   alert("dotps:"+dotpos)
+  if(ch=='A' || ch=='a'){
+       if (atpos<1 || dotpos-atpos<2 ){
+
+           alert("Not a valid e-mail address");
+           return false;
+       }else {
+        //alert("Email Function Established");
+        document.write("Login Successfull");
+        return true;
+       }
+     }else {
+       alert("Email With 'A' or 'a' Character ");
+       return false;
+     }
+    
+}
+    </script>
+  </head>
+  <body>
+    <form class="" action="index.html" method="post">
+      Username:<input type="text" id="text1" name="" value=""/>
+      <input type="button" onclick="validation()" name="" value="submit"/>
+
+      Age:<input type="text" id="age" name="" value=""/>
+      <input type="button"  onclick="Agevalidation(document.getElementById('age'),18,35)" name="" value="submit"/>
+
+      Email:<input id="Email" type="text" name="" value=""/>
+      <input type="button" name="" value="Submit" onclick="Emailvalidation()">
+    </form>
+
+  </body>
+</html>
