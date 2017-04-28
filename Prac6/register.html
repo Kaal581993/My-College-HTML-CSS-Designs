@@ -1,0 +1,334 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="CSS/menu.css">
+    <link rel="stylesheet" type="text/css" href="CSS/slider.css">
+
+        <meta property="og:title" content="Crossword">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content=" - Crossword">
+
+      <meta name="description" content=" - Crossword">
+
+
+
+    <meta name="Robots" content="noimageindex, nomediaindex, noimageclick">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "url": "http://www.crossword.in",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "http://www.crossword.in/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+
+
+                <script type="text/javascript">
+                /*function validation() {
+                  var element= document.getElementById("text1"); var str=element.value;
+                  var RegularExpr=/^[0-9A-Za-z]+$/;
+                  if(str.match(RegularExpr)){return true;}else{
+                    alert("Please enter the alphanumeric value");element.focus();return false;
+                  }
+                }
+
+                function Agevalidation(Element,Min,Max){
+                  var n= Element.value.valueOf();
+                  if(n>=Min && n<=Max){return true;}else {
+                    Element.focus(); alert("Please enter age between 18 & 35");
+                  }
+                }
+    */
+                function UsernameValidation() {
+                  var element= document.getElementById("uname"); var str=element.value;
+                  var RegularExpr=/^[0-9A-Za-z]+$/;
+                  if(str.match(RegularExpr)){
+                    alert("inside uname if");
+                    return true;
+                  }else{
+                    alert("inside invalid uname if");
+                    alert("Please enter the alphanumeric value");element.focus();return false;
+                  }
+                }
+                function Emailvalidation(){
+                //alert("Email Function");
+                var element = document.getElementById("Email");
+                var Email1=element.value;
+                var ch=Email1.charAt(0);
+                  //alert(ch);
+                var atpos = Email1.indexOf("@");
+                 // alert("atpos:"+atpos);
+                var dotpos = Email1.lastIndexOf(".");
+                 //   alert("dotps:"+dotpos)
+                 if (atpos<1 || dotpos-atpos<2 ){
+                     alert("Not a valid e-mail address");
+                     return false;
+                 }else {
+                  //alert("Email Function Established");
+                  document.write("Login Successfull");
+                  return true;
+                 }
+
+
+                }
+                    
+                  function NameValidation(){
+                     // alert("NameValidation");
+                          var Fname = document.getElementById("fname").value;
+                          var Lname =document.getElementById("lname").value;
+                          if (Fname.value==null||Fname.value=="" && Lname.value==null || Lname.value==""){
+                            alert("Name Cannot Be Left Blank!");
+                            return false;
+                          }
+                        }
+
+                    /*function PasswordValidation(){
+                        var password=document.getElementById("psswd").value;
+                        var Confirm_Password=document.getElementById("cnfmpsswd").value;
+                        
+                        if (password.lenght<6){
+                                 alert("Pasword should have atleast 6 characters & it Must have combination of atleast 1 char, 1 number & 1 special Character");
+                                        }else{
+                                            alert("PSWD else ");
+                                                    var passw=  /^[A-Za-z]\w{7,14}$/;
+                                                        if(password.match(passw)) {
+                                                                        return true;
+                                                            }else if (Confirm_Password.match(passw)) {    
+                                                                            return true;
+                                                            }else {
+                                                                alert("Passwords Don't Match"); return false;
+                                                            }else {alert("Pasword should have atleast 6 characters & it Must have combination of atleast 1 char, 1 number & 1 special Character");
+                                                                return false;}
+                                                            }
+                            }
+                    function PasswordValidation(){
+                        if(form.Password.value != "" && form.Password.value == form.ConfirmPassword.value) {
+                            if(form.Password.value.length < 6) {
+                                alert("Error: Password must contain at least six characters!");
+                                form.Password.focus();
+                                return false;
+                                }
+                                if(form.Password.value == form.username.value) {
+                                    alert("Error: Password must be different from Username!");
+                                    form.Password.focus();
+                                    return false;
+                                }
+                                    re = /[0-9]/;
+                                if(!re.test(form.Password.value)) {
+                                    alert("Error: password must contain at least one number (0-9)!");
+                                    form.Password.focus();
+                                    return false;
+                                }
+                                    re = /[a-z]/;
+                                if(!re.test(form.Password.value)) {
+                                    alert("Error: password must contain at least one lowercase letter (a-z)!");
+                                    form.Password.focus();
+                                    return false;
+                                }
+                                re = /[A-Z]/;
+                                if(!re.test(form.Password.value)) {
+                                    alert("Error: password must contain at least one uppercase letter (A-Z)!");
+                                form.Password.focus();
+                                return false;
+                                }
+                                } else {
+                                    alert("Error: Please check that you've entered and confirmed your password!");
+                                    form.Password.focus();
+                                    return false;
+                                }
+
+                                alert("You entered a valid password: " + form.Password.value);
+                                return true;
+                            }
+                    }*/
+
+                function ValidateForm(){
+                    //alert("gh");
+                  //var Email= document.getElementById("Email");
+                  //var uname=document.getElementById("uname");
+                
+                    NameValidation();
+                    Emailvalidation();
+                    UsernameValidation();
+                    PasswordValidation();
+
+                   
+                }
+                </script>
+
+  <style id="__web-inspector-hide-shortcut-style__" type="text/css">
+.__web-inspector-hide-shortcut__, .__web-inspector-hide-shortcut__ *,
+.__web-inspector-hidebefore-shortcut__::before,.__web-inspector-hideafter-shortcut__::after
+{visibility: hidden !important;}
+</style>
+</head>
+  <body>
+
+<nav class="nav">
+  <div class="col-md-3 col-sm-3">
+        <div id="logo">
+  <a href="index.html"><img src="/Users/Viral/Documents/Workspace/College FWT/Prac3/img/crwrd.png" alt=""></a>
+  </div>
+</div>
+
+    <div class="col-md-9 col-sm-9">
+      <div class="top-links">
+        <a href="index.html" class=" home">Home</a>    |  <a href="cart.html" class=" shopping-cart my_cart">my cart</a>  |  <a href="/my-account" class=" my-account">My Account</a>  |  <a href="/faq" class=" help">Help</a>  |  <a href="/wish-list" class=" my-wish-list">my Wish List</a>  |  <a href="/contact_us" class=" customer-care">customer care</a>
+      </div>
+    </div>
+    <div class="searchbar">
+      <form class="searchbar" action="index.html" method="post">
+        <select class="" name="Categories">
+          <option value="active">Categories</option>
+          <option value="">Novels</option>
+          <option value="">Comics</option>
+          <option value="">Engineering</option>
+          <option value="">It</option>
+          <option value="">Sci-Fi</option>
+          <option value="">Competitive</option>
+          <option value="">Best-Sellers</option>
+        </select><input class="search" name="" value="" type="text"><input class="button" name="" value="GO" type="button">
+      </form>
+
+      <div class="navmenu">
+       <ul>
+        <li><a href="#">Your Crossword</a></li>
+        <li><a href="#">Today's Deals</a></li>
+        <li><a href="#">Sell Books online</a></li>
+        <li><a href="#">Customer Service</a></li>
+
+        <li><a href="#">Help</a></li>
+      </ul>
+      </div>
+    </div>
+    <div class="Signin">
+      <ul>
+        <li><a href="Signin.html">Sign in</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </div>
+
+
+</nav>
+
+<div>
+  <div id="container">
+  <label for="drop" class="toggle">Menu</label>
+<input id="drop" type="checkbox">
+<ul class="menu">
+<li>
+</li><li><!-- First Tier Drop Down --> <label for="drop-1" class="toggle">Books+</label>
+  <a href="#">Categories</a>
+  <input id="drop-1" type="checkbox">
+  <ul>
+  <li><a href="#">Thrillers</a></li>
+  <li><a href="#">Sci-Fi</a></li>
+  <li><a href="#">Journalism</a></li>
+  <li><a href="#">Novels</a></li>
+  <li><a href="#">Education</a></li>
+  <li><a href="#">Engineering</a></li>
+  </ul>
+</li>
+<li><!-- First Tier Drop Down --> <label for="drop-1" class="toggle">Books+</label>
+<a href="#">Books</a>
+<input id="drop-1" type="checkbox">
+<ul>
+<li><a href="#">Themes and stuff</a></li>
+<li><a href="#">Plugins</a></li>
+<li><a href="#">Tutorials</a></li>
+</ul>
+</li><li><!-- First Tier Drop Down -->
+<label for="drop-2" class="toggle">Web Design +</label>
+<a href="#">Stationery</a>
+<input id="drop-2" type="checkbox">
+<ul>
+<li><a href="#">Resources</a></li>
+<li><a href="#">Links</a></li>
+<li><!-- Second Tier Drop Down -->        <label for="drop-3" class="toggle">Tutorials +</label>
+<a href="#">Crosswords Recommends</a>
+<input id="drop-3" type="checkbox">
+<ul>
+<li><a href="#">HTML/CSS</a></li>
+<li><a href="#">jQuery</a></li>
+<li><a href="#">Other</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#">Gift Vouchers</a></li>
+<li><a href="#">Inspiration</a></li>
+<li><a href="#">Contact</a></li>
+<li><a href="#">Raymond Crossword Book Awards</a></li>
+</ul>
+
+<div class="content">
+
+  <div class="form-wrapper">
+
+    <div class="linker">
+
+
+   <span class="ring"></span><span class="ring"></span>
+
+
+
+      <span class="ring"></span><span class="ring"></span>
+
+      <span class="ring"></span><span class="ring"></span>
+
+      <span class="ring"></span><span class="ring"></span>
+
+  	<span class="ring"></span><span class="ring"></span>
+
+      <span class="ring"></span><span class="ring"></span>
+
+      <span class="ring"></span><span class="ring"></span>
+
+      <span class="ring"></span><span class="ring"></span>
+
+      <span class="ring"></span><span class="ring"></span>
+
+
+</div>
+    
+    <form class="login-form " action="#" method="post">
+      <input type="text" id="fname" name="First Name" placeholder="First Name">
+      <input type="text" id="lname" name="Last Name" placeholder="Last Name">
+      <input type="text" id="Email" name="Email id" placeholder="Email Id">
+      <input type="text" id="uname" name="username" placeholder="username">
+      <input type="password" id="psswd" name="password" placeholder="Password">
+      <input type="password" id="cnfmpsswd" name="ConfirmPassword" placeholder="Confirm Password">
+      <input type="submit" class="button" onclick="ValidateForm()" value="Register">
+    </form>
+  </div>
+</div>
+
+
+</div>
+
+</div>
+
+<div class=" home-widget  row_wrapper" style="">
+        </div>
+
+
+
+<!--
+Index Page:
+Practical 1-10
+Assignment 1,2
+Quiz-1:
+Sessional 1,2,3 marks
+
+on wenesdays
+
+-->
+</body>
+</html>
